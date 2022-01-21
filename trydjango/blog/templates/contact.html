@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block  content %}
+<h3>contact page</h3>
+<br>
+<a href='/'>home</a>
+<a href='about'>aboout</a>
+<a href='contact'>contact</a>
+
+<p>
+    {{ phone }}
+    <br>
+    {{ address }}
+</p>
+<ul>
+{% for sub_items in my_items %}
+<li>{{sub_items}}</li>
+{% endfor %}
+</ul>
+{% endblock  %}

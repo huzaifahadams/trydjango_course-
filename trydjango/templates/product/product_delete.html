@@ -1,0 +1,5 @@
+<form action='.' method='POST'>
+    {% csrf_token %}
+    <h1>Do you want to delete the product '{{info.title}}' ?</h1>
+    <p><input type='submit' value = 'Yes' /> <a href='../'>Cancle</a></p>
+</form
